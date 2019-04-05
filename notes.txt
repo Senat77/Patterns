@@ -1,1 +1,6 @@
+Паттерны
+========
+Duck - Стратегия
+PersonsAndWeapons - Стратегия
+WeatherStation - Наблюдатель
 94
