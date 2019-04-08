@@ -3,4 +3,4 @@
 Duck - Стратегия
 PersonsAndWeapons - Стратегия
 WeatherStation - Наблюдатель
-94
+101
