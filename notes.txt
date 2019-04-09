@@ -3,4 +3,6 @@
 Duck - Стратегия
 PersonsAndWeapons - Стратегия
 WeatherStation - Наблюдатель
-101
+WeatherStationWithJavaClasses - Наблюдатель
+SwingObserver - Наблюдатель
+107
