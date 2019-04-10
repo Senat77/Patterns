@@ -5,4 +5,5 @@ PersonsAndWeapons - Стратегия
 WeatherStation - Наблюдатель
 WeatherStationWithJavaClasses - Наблюдатель
 SwingObserver - Наблюдатель
+Starbuzz - Декоратор
 107

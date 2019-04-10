@@ -5,12 +5,10 @@ import java.util.Observer;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 
-    private Observable observable;
     private float currentPressure = 29.92f;
     private float lastPressure;
 
     public ForecastDisplay(Observable observable) {
-        this.observable = observable;
         observable.addObserver(this);
     }
 
