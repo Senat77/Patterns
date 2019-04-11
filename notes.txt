@@ -7,4 +7,5 @@ WeatherStationWithJavaClasses - Наблюдатель
 SwingObserver - Наблюдатель
 Starbuzz - Декоратор
 LowerCaseInputStream - Декоратор
+PizzaFactory - Фабрика
 144
