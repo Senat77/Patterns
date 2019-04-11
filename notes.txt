@@ -6,4 +6,5 @@ WeatherStation - Наблюдатель
 WeatherStationWithJavaClasses - Наблюдатель
 SwingObserver - Наблюдатель
 Starbuzz - Декоратор
-107
+LowerCaseInputStream - Декоратор
+144
