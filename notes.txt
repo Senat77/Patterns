@@ -7,5 +7,7 @@ WeatherStationWithJavaClasses - Наблюдатель
 SwingObserver - Наблюдатель
 Starbuzz - Декоратор
 LowerCaseInputStream - Декоратор
-PizzaFactory - Фабрика
-144
+PizzaFactory - Фабричный метод
+
+179
+Продумать размещение классов по подпакетам !
