@@ -1,4 +1,6 @@
-package PizzaFactory;
+package PizzaFactory.regionpizza;
+
+import PizzaFactory.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
 
@@ -10,7 +12,7 @@ public class ChicagoStyleCheesePizza extends Pizza {
     }
 
     @Override
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into square slices");
     }
 }

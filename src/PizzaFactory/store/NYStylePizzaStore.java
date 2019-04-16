@@ -1,4 +1,10 @@
-package PizzaFactory;
+package PizzaFactory.store;
+
+import PizzaFactory.Pizza;
+import PizzaFactory.regionpizza.NYStyleCheesePizza;
+import PizzaFactory.regionpizza.NYStyleClamPizza;
+import PizzaFactory.regionpizza.NYStylePepperoniPizza;
+import PizzaFactory.regionpizza.NYStyleVeggiePizza;
 
 public class NYStylePizzaStore extends PizzaStore {
 

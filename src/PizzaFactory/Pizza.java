@@ -1,31 +1,43 @@
 package PizzaFactory;
 
-import java.util.ArrayList;
+import PizzaFactory.factory.ingredients.*;
+
+import java.util.Arrays;
 
 public abstract class Pizza {
 
     protected String name;
-    protected String dough;
-    protected String sauce;
-    protected ArrayList<String> toppings = new ArrayList<>();
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Veggies[] veggies;
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clam;
 
-    void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough " + dough + " ...");
-        System.out.println("Adding sauce " + sauce + " ...");
-        System.out.println("Adding toppings :");
-        toppings.forEach(s -> System.out.println("\t" + s));
-    }
+    public abstract void prepare();
 
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
+    }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "name='" + name + '\'' +
+                ", dough=" + dough +
+                ", sauce=" + sauce +
+                ", veggies=" + Arrays.toString(veggies) +
+                ", cheese=" + cheese +
+                ", pepperoni=" + pepperoni +
+                ", clam=" + clam +
+                '}';
     }
 }

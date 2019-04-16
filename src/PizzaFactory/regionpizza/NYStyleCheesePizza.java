@@ -1,4 +1,6 @@
-package PizzaFactory;
+package PizzaFactory.regionpizza;
+
+import PizzaFactory.Pizza;
 
 public class NYStyleCheesePizza extends Pizza {
 
