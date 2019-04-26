@@ -10,8 +10,10 @@ public class PizzaTestDrive {
         PizzaStore nyStore = new NYStylePizzaStore();
         PizzaStore chicagoStore = new ChicagoStylePizzaStore();
 
-        Pizza pizza = nyStore.orderPizza("cheese");
-        System.out.println("==========");
-        pizza = chicagoStore.orderPizza("cheese");
+        Pizza nyPizza = nyStore.orderPizza("cheese");
+        Pizza chicagoPizza = chicagoStore.orderPizza("cheese");
+
+        System.out.println(nyPizza);
+        System.out.println(chicagoPizza);
     }
 }

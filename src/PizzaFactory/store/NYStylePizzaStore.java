@@ -1,10 +1,12 @@
 package PizzaFactory.store;
 
 import PizzaFactory.Pizza;
-import PizzaFactory.regionpizza.NYStyleCheesePizza;
-import PizzaFactory.regionpizza.NYStyleClamPizza;
-import PizzaFactory.regionpizza.NYStylePepperoniPizza;
-import PizzaFactory.regionpizza.NYStyleVeggiePizza;
+import PizzaFactory.factory.NYPizzaIngredientFactory;
+import PizzaFactory.factory.PizzaIngredientFactory;
+import PizzaFactory.simplypizza.CheesePizza;
+import PizzaFactory.simplypizza.ClamPizza;
+import PizzaFactory.simplypizza.PepperoniPizza;
+import PizzaFactory.simplypizza.VeggiePizza;
 
 public class NYStylePizzaStore extends PizzaStore {
 
@@ -12,12 +14,13 @@ public class NYStylePizzaStore extends PizzaStore {
     Pizza createPizza(String type) {
 
         Pizza pizza = null;
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 
         switch (type) {
-            case ("cheese") -> pizza = new NYStyleCheesePizza();
-            case ("pepperoni") -> pizza = new NYStylePepperoniPizza();
-            case ("clam") -> pizza = new NYStyleClamPizza();
-            case ("veggie") -> pizza = new NYStyleVeggiePizza();
+            case ("cheese") -> (pizza = new CheesePizza(ingredientFactory)).setName("New York Style Cheese Pizza");
+            case ("pepperoni") -> pizza = new PepperoniPizza();
+            case ("clam") -> (pizza = new ClamPizza(ingredientFactory)).setName("New York Style Clam Pizza");
+            case ("veggie") -> pizza = new VeggiePizza();
         }
 
         return pizza;

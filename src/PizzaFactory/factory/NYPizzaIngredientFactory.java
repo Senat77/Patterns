@@ -10,7 +10,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     @Override
-    public Sauce createSouce() {
+    public Sauce createSauce() {
         return new MarinaraSauce();
     }
 
