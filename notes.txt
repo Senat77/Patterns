@@ -8,5 +8,6 @@ SwingObserver - Наблюдатель
 Starbuzz - Декоратор
 LowerCaseInputStream - Декоратор
 PizzaFactory - Фабричный метод, Абстрактная фабрика
+ChocolateBoiler - Синглтон
 
-200
+232
