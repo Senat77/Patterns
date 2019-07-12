@@ -10,4 +10,4 @@ LowerCaseInputStream - Декоратор
 PizzaFactory - Фабричный метод, Абстрактная фабрика
 ChocolateBoiler - Синглтон
 
-232
+240
