@@ -1,24 +1,22 @@
 package RemoteControl.command;
 
-import RemoteControl.RemoteControl;
-import RemoteControl.command.Command;
 import RemoteControl.device.GarageDoor;
 
-public class GarageDoorOpenCommand implements Command {
+public class GarageDoorCloseCommand implements Command {
 
     private GarageDoor door;
 
-    public GarageDoorOpenCommand(GarageDoor door) {
+    public GarageDoorCloseCommand(GarageDoor door) {
         this.door = door;
     }
 
     @Override
     public void execute() {
-        door.up();
+        door.down();
     }
 
     @Override
     public void undo() {
-        door.down();
+        door.up();
     }
 }

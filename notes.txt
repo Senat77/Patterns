@@ -9,5 +9,6 @@ Starbuzz - Декоратор
 LowerCaseInputStream - Декоратор
 PizzaFactory - Фабричный метод, Абстрактная фабрика
 ChocolateBoiler - Синглтон
+RemoteControl - Команда
 
-240
+249
