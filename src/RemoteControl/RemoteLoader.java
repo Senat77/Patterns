@@ -1,6 +1,7 @@
 package RemoteControl;
 
 import RemoteControl.command.*;
+import RemoteControl.device.CeilingFan;
 import RemoteControl.device.GarageDoor;
 import RemoteControl.device.Light;
 import RemoteControl.device.Stereo;
@@ -14,14 +15,20 @@ public class RemoteLoader {
         Light light = new Light();
         GarageDoor door = new GarageDoor();
         Stereo stereo = new Stereo();
+        CeilingFan fan = new CeilingFan("Living Room");
 
         // Commands
         LightOnCommand lightOnCommand = new LightOnCommand(light);
         LightOffCommand lightOffCommand = new LightOffCommand(light);
+
         GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(door);
         GarageDoorCloseCommand garageDoorCloseCommand = new GarageDoorCloseCommand(door);
+
         StereoOnWithCDCommand stereoOnWithCDCommand = new StereoOnWithCDCommand(stereo);
         StereoOffCommand stereoOffCommand = new StereoOffCommand(stereo);
+
+        CeilingFanHighCommand ceilingFanHighCommand = new CeilingFanHighCommand(fan);
+        CeilingFanMediumCommand ceilingFanMediumCommand = new CeilingFanMediumCommand(fan);
 
         // Buttons on remote control
         remote.setCommand(0, lightOnCommand, lightOffCommand);
