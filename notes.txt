@@ -10,5 +10,6 @@ LowerCaseInputStream - Декоратор
 PizzaFactory - Фабричный метод, Абстрактная фабрика
 ChocolateBoiler - Синглтон
 RemoteControl - Команда
+Turkey - Адаптер
 
-251
+285
