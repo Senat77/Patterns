@@ -29,11 +29,21 @@ public class RemoteLoader {
 
         CeilingFanHighCommand ceilingFanHighCommand = new CeilingFanHighCommand(fan);
         CeilingFanMediumCommand ceilingFanMediumCommand = new CeilingFanMediumCommand(fan);
+        CeilingFanLowCommand ceilingFanLowCommand = new CeilingFanLowCommand(fan);
+        CeilingFanOffCommand ceilingFanOffCommand = new CeilingFanOffCommand(fan);
+
+        Command[] partyOnCommandsArray = new Command[] {lightOnCommand, stereoOnWithCDCommand, ceilingFanHighCommand};
+        Command[] partyOffCommandsArray = new Command[] {lightOffCommand, stereoOffCommand, ceilingFanOffCommand};
+        MacroCommand partyOnCommand = new MacroCommand(partyOnCommandsArray);
+        MacroCommand partyOffCommand = new MacroCommand(partyOffCommandsArray);
 
         // Buttons on remote control
         remote.setCommand(0, lightOnCommand, lightOffCommand);
         remote.setCommand(1, garageDoorOpenCommand, garageDoorCloseCommand);
         remote.setCommand(2, stereoOnWithCDCommand, stereoOffCommand);
+        remote.setCommand(3, ceilingFanMediumCommand, ceilingFanOffCommand);
+        remote.setCommand(4, ceilingFanHighCommand, ceilingFanOffCommand);
+        remote.setCommand(5, partyOnCommand, partyOffCommand);
 
         System.out.println(remote);
 
@@ -51,6 +61,19 @@ public class RemoteLoader {
         System.out.println("\n=== Stereo ===");
         remote.onButtonWasPushed(2);
         remote.offButtonWasPushed(2);
+        remote.undoButtonWasPushed();
+
+        System.out.println("\n=== Ceiling Fan ===");
+        remote.onButtonWasPushed(3);
+        remote.offButtonWasPushed(3);
+        remote.undoButtonWasPushed();
+        remote.onButtonWasPushed(4);
+        remote.undoButtonWasPushed();
+
+        System.out.println("\n=== Party !!! ===");
+        remote.onButtonWasPushed(5);
+        remote.offButtonWasPushed(5);
+        remote.onButtonWasPushed(5);
         remote.undoButtonWasPushed();
     }
 }
