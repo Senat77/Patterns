@@ -12,5 +12,6 @@ ChocolateBoiler - Синглтон
 RemoteControl - Команда
 Turkey - Адаптер
 EnumerationIterator - Адаптер
+HomeTheaterFacade - Фасад
 
-285
+297
