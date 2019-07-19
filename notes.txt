@@ -11,5 +11,6 @@ PizzaFactory - Фабричный метод, Абстрактная фабри�
 ChocolateBoiler - Синглтон
 RemoteControl - Команда
 Turkey - Адаптер
+EnumerationIterator - Адаптер
 
 285
