@@ -14,4 +14,4 @@ Turkey - Адаптер
 EnumerationIterator - Адаптер
 HomeTheaterFacade - Фасад
 
-297
+310
