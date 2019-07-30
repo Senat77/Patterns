@@ -13,5 +13,6 @@ RemoteControl - Команда
 Turkey - Адаптер
 EnumerationIterator - Адаптер
 HomeTheaterFacade - Фасад
+CoffeeAndTea - Шаблонный метод
 
-310
+329
