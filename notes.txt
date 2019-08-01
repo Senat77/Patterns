@@ -15,4 +15,4 @@ EnumerationIterator - Адаптер
 HomeTheaterFacade - Фасад
 CoffeeAndTea - Шаблонный метод
 
-329
+346
