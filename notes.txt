@@ -14,5 +14,6 @@ Turkey - Адаптер
 EnumerationIterator - Адаптер
 HomeTheaterFacade - Фасад
 CoffeeAndTea - Шаблонный метод
+BistroAndPancake - Итератор и Компоновщик
 
-346
+352
