@@ -16,4 +16,4 @@ HomeTheaterFacade - Фасад
 CoffeeAndTea - Шаблонный метод
 BistroAndPancake - Итератор и Компоновщик
 
-352
+358
