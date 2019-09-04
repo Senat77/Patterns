@@ -1,8 +1,9 @@
 package BistroAndPancake;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
 
     ArrayList<MenuItem> menuItems;
 
@@ -19,7 +20,7 @@ public class PancakeHouseMenu {
         menuItems.add(new MenuItem(name, description, vegetarian, price));
     }
 
-    public Iterator createIterator() {
-        return new PancakeHouseMenuIterator(menuItems);
+    public Iterator<MenuItem> createIterator() {
+        return menuItems.iterator();
     }
 }
